@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +41,41 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.streetLight {
+  display: grid;
+  grid-template-columns: 40px;
+  grid-gap: 20px;
+}
+
+.light {
+  background-color: gray;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.red.light-on {
+  background-color: red;
+}
+
+.green {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.green.light-on {
+  background-color: green;
+}
+
+.yellow {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.yellow.light-on {
+  background-color: yellow;
 }

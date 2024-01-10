@@ -8,7 +8,7 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', '@stylistic'],
+  plugins: ['react-refresh', '@stylistic', '@stylistic/js', '@typescript-eslint'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -32,7 +32,7 @@ module.exports = {
     '@stylistic/space-before-function-paren': [ 'error', 'never' ],
     '@stylistic/block-spacing':               [ 'error', 'always' ],
     '@stylistic/no-multi-spaces':             [ 'error' ],
-    '@stylistic/key-spacing':                 [ 'error', { 'align': 'value' } ],
+    '@stylistic/js/key-spacing':                 [ 'error', { 'align': 'value' } ],
     '@stylistic/array-bracket-spacing':       [ 'error', 'always' ],
     'brace-style':                            [ 'error' ],
     '@stylistic/space-infix-ops':             [ 'error' ],
@@ -59,5 +59,6 @@ module.exports = {
         'after':  true,
       },
     ],
+    "@typescript-eslint/typedef": "error"
   },
 }
